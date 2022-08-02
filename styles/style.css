@@ -1,0 +1,473 @@
+@import 'font.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1345px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: #EFF5F5;
+}
+
+/* HEADER START */
+
+.header__nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+}
+
+
+.header__nav-span span:first-child {
+    color: #B49081;
+    font-family: 'mont-family';
+    font-size: 12px;
+    line-height: 15px
+}
+
+.header__nav-span span:last-child {
+    color: #563529;
+    letter-spacing: 0.75em;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'mont-black';
+}
+
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    column-gap: 25px;
+}
+
+.header__nav-link {
+    display: inline-block;
+    color: #626262;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'mont-regular';
+}
+
+.white-btn {
+    background: #FFFFFF;
+    display: inline-block;
+    padding: 9px 39px;
+    border-radius: 6px;
+    box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+    /* Тень */
+    color: #323232;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'mont-regular';
+}
+
+.header__nav-btn {
+    margin-left: 40px;
+}
+
+.header__content {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content-bg {
+    position: absolute;
+    z-index: -1;
+    /* Регудирует приоритет элементов н странице */
+    top: 0;
+}
+
+.header__content-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content-title {
+    font-size: 50px;
+    line-height: 61px;
+    color: #323232;
+    font-family: 'mont-bold';
+    max-width: 530px;
+    width: 1005;
+}
+
+.header__content-links {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    max-width: 635px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 59px 30px -40px rgba(0, 133, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    /* размытие фона */
+    padding: 25px 0;
+
+}
+
+/* EADER END */
+
+/* MAIN START */
+
+.main {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.main__course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__title {
+    font-size: 30px;
+    line-height: 37px;
+    color: #626262;
+    font-family: 'mont-bold';
+}
+
+.main__course-item {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 30px -15px rgba(0, 133, 255, 0.1);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding: 15px 0px 15px 15px;
+    max-width: 306px;
+    width: 100%;
+}
+
+.main__course-count {
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+    font-family: 'mont-bold';
+}
+
+.main__course-line {
+    width: 43px;
+    height: 5px;
+    position: relative;
+    margin-left: 17px;
+    margin-right: 12px;
+}
+
+.main__course-line::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #626262;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.main__course-line::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #626262;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.main__course-info {
+    display: flex;
+    align-items: center;
+}
+
+.main__course-price {
+    font-family: 'mont-bold';
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+
+}
+
+.main__course-sum {
+    font-family: 'mont-regular';
+}
+
+.main__course-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.main__course-right {
+    width: 50%;
+}
+
+.main__cards {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__cards-subtitle {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    color: #626262;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'mont-light';
+}
+
+.main__cards-visa {
+    font-family: 'mont-bold';
+}
+
+.main__cards-info {
+    font-size: 16px;
+    line-height: 20px;
+    color: #626262;
+    font-family: 'mont-bold';
+    margin-bottom: 20px;
+}
+
+.main__cards-info > span {
+    margin-left: 30px;
+}
+
+.main__cards-link  {
+    margin-right: 30px;
+}
+
+.main__offer .main__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main__offer-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 642px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main__offer-card:first-child {
+    background: #BDC4FF;
+    box-shadow: 0px 40px 30px -25px rgba(189, 196, 255, 0.5);
+}
+
+.main__offer-card::before {
+    content: 'ХИТ';
+    display: inline-block;
+    border-radius: 4px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+    border: 0.5px solid rgba(215, 215, 215, 0.3);
+    padding: 3px 16px;
+    color: #000000;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'mont-bold';
+    position: absolute;
+    top: -10px;
+}
+
+.main__offer-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'mont-bold';
+    color: #626262;
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+
+.main__offer-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'mont-regular';
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.main__offer-term {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'mont-regular';
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.main__offer-card:last-child {
+    background: #FFD280;
+    box-shadow: 0px 40px 30px -25px rgba(255, 210, 128, 0.4);
+}
+
+.main__offer-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__offer-all {
+    max-width: 194px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.main__services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    
+}
+
+.main__services {
+    margin-top: 50px;
+}
+
+.main__services .main__title {
+    text-align: center;
+} 
+
+.main__services-left {
+    background: #97EAB9;
+    box-shadow: 0px 40px 30px -25px rgba(151, 234, 185, 0.4);
+    border-radius: 10px;
+    max-width: 642px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    padding-top: 25px;
+}
+
+.main__services-item {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    max-width: 642px;
+    width: 100%;
+}
+
+.main__services-item:first-child {
+    background: #FFC1BD;
+    box-shadow: 0px 25px 30px -20px rgba(255, 193, 189, 0.5);
+    padding: 49px 35px;
+    column-gap: 35px;
+    margin-bottom: 42px;
+}
+
+.main__services-item:last-child {
+    background: #C1B7FF;
+    padding: 38px 64px;
+    column-gap: 65px;
+}
+
+.main__services-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.main__services-link {
+    background: #FFFFFF;
+    box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+    border-radius: 12px;
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+/* MAIN END*/
+
+/* FOOTER START */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer__logo-top {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color: #B49081;
+    font-family: 'mont-medium';
+}
+
+.light-span {
+    font-family: 'mont-light';
+}
+
+.footer__logo-bottom {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.75em;
+    color: #563529;
+    font-family: 'mont-black'
+}
+
+.footer__text {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'mont-bold';
+    color: #626262;
+   
+    margin-top: 20px;
+}
+
+
+/* FOOTER END */
